@@ -1,0 +1,52 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Docs/Getting Started/Install" />
+
+# Emotion grid system
+
+A mobile-first responsive grid system built with @emotion/css.
+
+## Installation
+
+> Note: Emotion is listed as a peerDependency, so you’ll need to install it alongside emotion-grid-system.
+
+```bash
+pnpm add @emotion/css emotion-grid-system
+```
+
+## Basic Usage
+
+To create a responsive layout, wrap your columns (Grid.Col) inside a row (Grid.Row), and the row inside a container (Grid.Container).
+
+```tsx
+import { Grid } from "emotion-grid-system";
+
+function Page() {
+  return (
+    <Grid.Container>
+      <Grid.Row>
+        <Grid.Col
+          size={{
+            xs: 4,
+            md: 6,
+            xl: 12,
+          }}
+        >
+          Col
+        </Grid.Col>
+        <Grid.Col
+          size={{
+            xs: 4,
+            md: 6,
+            xl: 12,
+          }}
+        >
+          Col
+        </Grid.Col>
+      </Grid.Row>
+    </Grid.Container>
+  );
+}
+
+export default Page;
+```

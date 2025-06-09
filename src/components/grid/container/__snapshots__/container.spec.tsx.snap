@@ -1,0 +1,357 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`@Grid/Container > should render with a custom className 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding-left: calc(2rem / 2);
+  padding-right: calc(2rem / 2);
+}
+
+@media (min-width: 40rem) {
+  .emotion-0 {
+    max-width: 100%;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 48rem) {
+  .emotion-0 {
+    max-width: 48rem;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 64rem) {
+  .emotion-0 {
+    max-width: 64rem;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 80rem) {
+  .emotion-0 {
+    max-width: 80rem;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 96rem) {
+  .emotion-0 {
+    max-width: 96rem;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+<div
+  class="emotion-0 my-custom-class-name"
+  data-grid="container"
+>
+  Container
+</div>
+`;
+
+exports[`@Grid/Container > should render with debug styles when passed the isDebug prop 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding-left: calc(2rem / 2);
+  padding-right: calc(2rem / 2);
+}
+
+@media (min-width: 40rem) {
+  .emotion-0 {
+    max-width: 100%;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 48rem) {
+  .emotion-0 {
+    max-width: 48rem;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 64rem) {
+  .emotion-0 {
+    max-width: 64rem;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 80rem) {
+  .emotion-0 {
+    max-width: 80rem;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 96rem) {
+  .emotion-0 {
+    max-width: 96rem;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+.emotion-0 [data-grid=row] {
+  background: #2563eb0D;
+}
+
+.emotion-0 [data-grid=col] {
+  background: #2563eb0D;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #2563eb;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: calc((2rem / 2) * -1);
+  margin-right: calc((2rem / 2) * -1);
+}
+
+@media (min-width: 40rem) {
+  .emotion-1 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 48rem) {
+  .emotion-1 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 64rem) {
+  .emotion-1 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 80rem) {
+  .emotion-1 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 96rem) {
+  .emotion-1 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+.emotion-2 {
+  -webkit-flex: 1 0 0%;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  padding-left: calc(2rem / 2);
+  padding-right: calc(2rem / 2);
+}
+
+@media (min-width: 40rem) {
+  .emotion-2 {
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 48rem) {
+  .emotion-2 {
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 64rem) {
+  .emotion-2 {
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 80rem) {
+  .emotion-2 {
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 96rem) {
+  .emotion-2 {
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+<div
+  class="emotion-0"
+  data-grid="container"
+>
+  <div
+    class="emotion-1"
+    data-grid="row"
+  >
+    <div
+      class="emotion-2"
+      data-grid="col"
+    >
+      Col
+    </div>
+  </div>
+</div>
+`;
+
+exports[`@Grid/Container > should render with default styles 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding-left: calc(2rem / 2);
+  padding-right: calc(2rem / 2);
+}
+
+@media (min-width: 40rem) {
+  .emotion-0 {
+    max-width: 100%;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 48rem) {
+  .emotion-0 {
+    max-width: 48rem;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 64rem) {
+  .emotion-0 {
+    max-width: 64rem;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 80rem) {
+  .emotion-0 {
+    max-width: 80rem;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 96rem) {
+  .emotion-0 {
+    max-width: 96rem;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+<div
+  class="emotion-0"
+  data-grid="container"
+>
+  Container
+</div>
+`;
+
+exports[`@Grid/Container > should render with fluid styles when passed the isFluid prop 1`] = `
+.emotion-0 {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  padding-left: calc(2rem / 2);
+  padding-right: calc(2rem / 2);
+}
+
+@media (min-width: 40rem) {
+  .emotion-0 {
+    max-width: 100%;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 48rem) {
+  .emotion-0 {
+    max-width: 100%;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 64rem) {
+  .emotion-0 {
+    max-width: 100%;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 80rem) {
+  .emotion-0 {
+    max-width: 100%;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 96rem) {
+  .emotion-0 {
+    max-width: 100%;
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+<div
+  class="emotion-0"
+  data-grid="container"
+>
+  Container fluid
+</div>
+`;

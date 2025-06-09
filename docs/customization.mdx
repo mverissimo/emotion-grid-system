@@ -1,0 +1,75 @@
+import {
+  Meta,
+  Canvas,
+  Story,
+  Controls,
+  Markdown,
+  Source,
+} from "@storybook/addon-docs/blocks";
+
+import * as Col from "../src/components/grid/col/col.stories";
+import { DEFAULT_THEME } from "../src/theme";
+
+<Meta title="Docs/Getting Started/Customization" />
+
+## Customization
+
+You can override the default configuration by providing a custom `grid` theme using Emotion's `ThemeProvider`.
+
+```tsx
+import { ThemeProvider } from "@emotion/react";
+import { Grid } from "emotion-grid-system";
+
+const customTheme = {
+  grid: {
+    columns: {
+      initial: 12,
+      lg: 12,
+      xl: 12,
+    },
+  },
+};
+
+function Page() {
+  return (
+    <ThemeProvider theme={customTheme}>
+      <Grid.Container>
+        <Grid.Row>
+          <Grid.Col
+            size={{
+              xs: 4,
+              md: 6,
+              xl: 12,
+            }}
+          >
+            Col
+          </Grid.Col>
+        </Grid.Row>
+      </Grid.Container>
+    </ThemeProvider>
+  );
+}
+
+export default Page;
+```
+
+### TypeScript Support
+
+If you're using TypeScript, extend the Emotion `Theme` interface to enable autocomplete and type-checking:
+
+```tsx
+//@types/emotion.d.ts
+
+import { ThemeProvider } from "@emotion/react";
+import type { GridTheme } from "emotion-grid-system";
+
+declare module "@emotion/react" {
+  export interface Theme extends GridTheme {}
+}
+```
+
+## Default config
+
+Here’s the built-in default configuration
+
+<Source language="json" code={`${JSON.stringify(DEFAULT_THEME, null, 2)}`} />
