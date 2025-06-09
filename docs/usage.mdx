@@ -1,0 +1,48 @@
+import { Meta, Canvas } from "@storybook/addon-docs/blocks";
+import * as Grid from "../src/components/grid/grid.stories";
+
+<Meta title="Docs/Getting Started/Usage" />
+
+## Responsive
+
+Use a combination of `Grid.Row` and `Grid.Col` to create responsive layouts.
+
+Each `Grid.Col` must be a direct child of `Grid.Row`.
+
+<Canvas of={Grid.Base} />
+
+## Offset
+
+<Canvas of={Grid.Offset} />
+
+## Alignment
+
+### Vertical
+
+Control vertical alignment using `alignItems`. Works just like flexbox.
+
+<Canvas of={Grid.AlignItems} />
+
+### Horizontal
+
+Control horizontal distribution using `justifyContent`.
+
+<Canvas of={Grid.JustifyContent} />
+
+## Reverse
+
+Reverse the order of columns using the `reverse` prop.
+
+<Canvas of={Grid.Reverse} />
+
+## Nested
+
+Nest grids by placing a new `Grid.Row` and `Grid.Co`l inside an existing `Grid.Col`.
+
+<Canvas of={Grid.Nested} />
+
+## Remove gutters
+
+Remove horizontal spacing between columns using the `noGutters` prop.
+
+<Canvas of={Grid.NoGutters} />

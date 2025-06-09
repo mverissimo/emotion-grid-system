@@ -1,0 +1,380 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Row > should render align styles when passed the align prop 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: calc((2rem / 2) * -1);
+  margin-right: calc((2rem / 2) * -1);
+}
+
+@media (min-width: 40rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 48rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 64rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 80rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 96rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 48rem) {
+  .emotion-0 {
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+<div
+  class="emotion-0"
+  data-grid="row"
+>
+  Row
+</div>
+`;
+
+exports[`Row > should render justify styles when passed the justify prop 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: calc((2rem / 2) * -1);
+  margin-right: calc((2rem / 2) * -1);
+}
+
+@media (min-width: 40rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 48rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 64rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 80rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 96rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 80rem) {
+  .emotion-0 {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+}
+
+<div
+  class="emotion-0"
+  data-grid="row"
+>
+  Row justify
+</div>
+`;
+
+exports[`Row > should render with default styles 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: calc((2rem / 2) * -1);
+  margin-right: calc((2rem / 2) * -1);
+}
+
+@media (min-width: 40rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 48rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 64rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 80rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 96rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+<div
+  class="emotion-0"
+  data-grid="row"
+>
+  Row
+</div>
+`;
+
+exports[`Row > should render with noGutters styles when passed the noGutters prop 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: calc((2rem / 2) * -1);
+  margin-right: calc((2rem / 2) * -1);
+}
+
+@media (min-width: 40rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 48rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 64rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 80rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 96rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+.emotion-0 [data-grid=col] {
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
+
+.emotion-1 {
+  -webkit-flex: 1 0 0%;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  padding-left: calc(2rem / 2);
+  padding-right: calc(2rem / 2);
+}
+
+@media (min-width: 40rem) {
+  .emotion-1 {
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 48rem) {
+  .emotion-1 {
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 64rem) {
+  .emotion-1 {
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 80rem) {
+  .emotion-1 {
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+@media (min-width: 96rem) {
+  .emotion-1 {
+    padding-left: calc(2rem / 2);
+    padding-right: calc(2rem / 2);
+  }
+}
+
+<div
+  class="emotion-0"
+  data-grid="row"
+>
+  <div
+    class="emotion-1"
+    data-grid="col"
+  >
+    Col
+  </div>
+</div>
+`;
+
+exports[`Row > should render with reverse styles when passed the reverse prop 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-left: calc((2rem / 2) * -1);
+  margin-right: calc((2rem / 2) * -1);
+}
+
+@media (min-width: 40rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 48rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 64rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 80rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 96rem) {
+  .emotion-0 {
+    margin-left: calc((2rem / 2) * -1);
+    margin-right: calc((2rem / 2) * -1);
+  }
+}
+
+@media (min-width: 40rem) {
+  .emotion-0 {
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 80rem) {
+  .emotion-0 {
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}
+
+<div
+  class="emotion-0"
+  data-grid="row"
+>
+  Row reverse
+</div>
+`;

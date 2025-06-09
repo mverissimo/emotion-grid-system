@@ -1,0 +1,34 @@
+name: Code quality
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  code-quality:
+    name: Lint, Test & Typescript
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Install
+        uses: ./.github/composite-actions/install
+
+      - name: Typescript
+        run: pnpm check-types
+
+      - name: Format & Lint
+        run: pnpm format-and-lint
+
+      - name: Tests
+        run: pnpm test:ci

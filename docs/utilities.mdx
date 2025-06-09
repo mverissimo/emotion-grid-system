@@ -1,0 +1,77 @@
+import { Meta, Canvas, Story } from "@storybook/addon-docs/blocks";
+import * as ScreenClass from "../src/components/display/screen-class/screen-class.stories";
+import * as Visible from "../src/components/display/visible/visible.stories";
+import * as Hidden from "../src/components/display/hidden/hidden.stories";
+import * as DevTools from "../src/components/devtools/devtools.stories";
+
+<Meta title="Docs/Utilities" />
+
+## Utilities
+
+To support faster, responsive development, **emotion-grid-system** provides helpful utilities for media queries, conditional rendering, and developer tools.
+
+### Media helper
+
+A utility to create media queries using your theme’s breakpoints. Works only with **object-based styles** (used with Emotion’s css({})).
+
+```ts
+import { css } from '@emotion/react';
+import { media } from 'emotion-grid-system';
+
+const styles = (theme) => css({
+  [media(theme, 'lg')]: {
+    // your code below
+  }
+})
+`;
+```
+
+#### Output
+
+```css
+@media only screen and (min-width: 64em) {
+  // your code below
+}
+```
+
+### Screen Class
+
+`<ScreenClass />` renders the current breakpoint key (initital, sm, md, etc.). Great for debugging or conditional rendering.
+
+<Canvas of={ScreenClass.Base} />
+
+> Resize your browser window to see updates in real time.
+
+### Visible
+
+`<Visible />` renders children only **at specified breakpoints**.
+
+<Canvas of={Visible.Base} />
+
+> Try to resize your window to see the change.
+
+### Hidden
+
+`<Hidden />` hides children **at specified breakpoints**.
+
+<Canvas of={Hidden.Base} />
+
+> Try to resize your window to see the change.
+
+### DevTools
+
+`<DevTools />` is a debug component that:
+
+- Visualizes grid columns across breakpoints
+- Shows the current screen class
+- Doesn’t require debug props on every grid element
+
+<Canvas of={DevTools.Base}>
+  <div className="teste"></div>
+</Canvas>
+
+Prevent rendering DevTools in production builds:
+
+```ts
+process.env.NODE_ENV === 'development' && <DevTools />;
+```
