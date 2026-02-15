@@ -8,10 +8,10 @@ const meta = {
   component: Container,
   title: 'Components/Grid/Container',
   subcomponents: {
-    //@ts-expect-error
-    Row,
-    //@ts-expect-error
-    Col,
+    //@ts-ignore
+    Row: Row,
+    //@ts-ignore
+    Col: Col,
   },
 } satisfies Meta<typeof Container>;
 
