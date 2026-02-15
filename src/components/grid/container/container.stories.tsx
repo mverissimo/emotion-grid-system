@@ -9,9 +9,9 @@ const meta = {
   title: 'Components/Grid/Container',
   subcomponents: {
     //@ts-ignore
-    Row,
+    Row: Row,
     //@ts-ignore
-    Col,
+    Col: Col,
   },
 } satisfies Meta<typeof Container>;
 

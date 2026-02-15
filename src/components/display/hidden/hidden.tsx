@@ -13,7 +13,9 @@ function Hidden(props: HiddenProps) {
 
   const screen = useBreakpoint();
 
-  return media.includes(screen) ? null : <>{children}</>;
+  return media.includes(screen) ? null : children;
 }
+
+Hidden.displayName = '@Grid/Hidden';
 
 export default Hidden;

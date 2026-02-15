@@ -1,7 +1,6 @@
 import { render } from '@testing-library/react';
-
-import { Row } from '.';
 import { Col } from '../col';
+import { Row } from '.';
 
 describe('Row', () => {
   it('should render with default styles', () => {

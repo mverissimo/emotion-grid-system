@@ -1,8 +1,7 @@
 import { render } from '@testing-library/react';
-
-import { Container } from '.';
 import { Col } from '../col';
 import { Row } from '../row';
+import { Container } from '.';
 
 describe('@Grid/Container', () => {
   it('should render with default styles', () => {

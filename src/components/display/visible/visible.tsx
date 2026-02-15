@@ -13,7 +13,9 @@ function Visible(props: VisibleProps) {
 
   const screen = useBreakpoint();
 
-  return media.includes(screen) ? <>{children}</> : null;
+  return media.includes(screen) ? children : null;
 }
+
+Visible.displayName = '@Grid/Visible';
 
 export default Visible;

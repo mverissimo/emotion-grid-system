@@ -1,12 +1,10 @@
+import type { HTMLAttributes } from 'react';
 import React from 'react';
-import type { HTMLAttributes, Ref } from 'react';
-
+import { useBreakpoint } from '../../hooks/use-breakpoint';
+import { useTheme } from '../../hooks/use-theme';
 import { Col } from '../grid/col';
 import { Container } from '../grid/container';
 import { Row } from '../grid/row';
-
-import { useBreakpoint } from '../../hooks/use-breakpoint';
-import { useTheme } from '../../hooks/use-theme';
 
 import styles from './devtools.styles';
 
@@ -17,7 +15,7 @@ export interface DevToolsProps extends HTMLAttributes<HTMLDivElement> {
   isVisible?: boolean;
 }
 
-function DevTools(props: DevToolsProps, ref?: Ref<HTMLDivElement>) {
+function DevTools(props: DevToolsProps) {
   const { isVisible, className, ...rest } = props;
 
   const theme = useTheme();
@@ -28,12 +26,7 @@ function DevTools(props: DevToolsProps, ref?: Ref<HTMLDivElement>) {
 
   return (
     <>
-      <div
-        data-grid="overlay"
-        className={styles.grid(enableGrid)}
-        ref={ref}
-        {...rest}
-      >
+      <div data-grid="overlay" className={styles.grid(enableGrid)} {...rest}>
         <Container>
           <Row>
             {new Array(theme.grid.columns[bp]).fill('').map(() => (
@@ -54,5 +47,7 @@ function DevTools(props: DevToolsProps, ref?: Ref<HTMLDivElement>) {
     </>
   );
 }
+
+DevTools.displayName = '@Grid/DevTools';
 
 export default DevTools;

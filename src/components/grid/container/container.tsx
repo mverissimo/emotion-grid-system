@@ -1,5 +1,5 @@
 import { cx } from '@emotion/css';
-import type { HTMLAttributes, Ref } from 'react';
+import type { HTMLAttributes } from 'react';
 
 import { useTheme } from '../../../hooks/use-theme';
 
@@ -10,7 +10,7 @@ export interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
   isDebug?: boolean;
 }
 
-function Container(props: ContainerProps, ref?: Ref<HTMLDivElement>) {
+function Container(props: ContainerProps) {
   const { isFluid, isDebug, className, ...rest } = props;
 
   const theme = useTheme();
@@ -23,10 +23,11 @@ function Container(props: ContainerProps, ref?: Ref<HTMLDivElement>) {
         styles.debug(isDebug),
         className,
       )}
-      ref={ref}
       {...rest}
     />
   );
 }
+
+Container.displayName = '@Grid/Container';
 
 export default Container;

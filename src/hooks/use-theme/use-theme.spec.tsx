@@ -1,20 +1,17 @@
+import { ThemeProvider } from '@emotion/react';
 import { renderHook } from '@testing-library/react-hooks';
 import type { ReactNode } from 'react';
-
-import { ThemeProvider } from '@emotion/react';
-import { useTheme } from '.';
 import { DEFAULT_THEME } from '../../theme';
+import { useTheme } from '.';
 
 const theme = {
   color: 'blue',
 };
 
-const wrapper = (props: {
-  children: ReactNode;
-}) => {
+const wrapper = (props: { children: ReactNode }) => {
   const { children } = props;
 
-  //@ts-ignore
+  //@ts-expect-error
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
 };
 

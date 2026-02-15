@@ -1,9 +1,7 @@
-import type { HTMLAttributes, Ref } from 'react';
-
 import { cx } from '@emotion/css';
-import type { Breakpoint } from '../../../theme';
-
+import type { HTMLAttributes } from 'react';
 import { useTheme } from '../../../hooks/use-theme';
+import type { Breakpoint } from '../../../theme';
 
 import styles from './col.styles';
 
@@ -19,7 +17,7 @@ export interface ColProps extends HTMLAttributes<HTMLDivElement> {
   offset?: Partial<Record<Breakpoint, number>>;
 }
 
-function Col(props: ColProps, ref?: Ref<HTMLDivElement>) {
+function Col(props: ColProps) {
   const { size, offset, className, ...rest } = props;
 
   const theme = useTheme();
@@ -33,10 +31,11 @@ function Col(props: ColProps, ref?: Ref<HTMLDivElement>) {
         styles.offset(theme, offset),
         className,
       )}
-      ref={ref}
       {...rest}
     />
   );
 }
+
+Col.displayName = '@Grid/Col';
 
 export default Col;
