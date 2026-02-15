@@ -8,9 +8,9 @@ const meta = {
   component: Container,
   title: 'Components/Grid/Container',
   subcomponents: {
-    //@ts-ignore
+    //@ts-expect-error
     Row,
-    //@ts-ignore
+    //@ts-expect-error
     Col,
   },
 } satisfies Meta<typeof Container>;

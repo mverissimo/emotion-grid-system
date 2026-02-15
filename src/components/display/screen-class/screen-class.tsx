@@ -14,4 +14,6 @@ function ScreenClass(props: ScreenClassProps) {
   return render(screen);
 }
 
+ScreenClass.displayName = '@Grid/ScreenClass';
+
 export default ScreenClass;

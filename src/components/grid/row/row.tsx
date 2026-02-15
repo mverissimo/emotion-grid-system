@@ -1,9 +1,7 @@
-import type { CSSProperties, HTMLAttributes, Ref } from 'react';
-
 import { cx } from '@emotion/css';
-import type { ResponsiveValue } from '../../../theme';
-
+import type { CSSProperties, HTMLAttributes } from 'react';
 import { useTheme } from '../../../hooks/use-theme';
+import type { ResponsiveValue } from '../../../theme';
 
 import styles from './row.styles';
 
@@ -29,7 +27,7 @@ export interface RowProps extends HTMLAttributes<HTMLDivElement> {
   noGutters?: boolean;
 }
 
-function Row(props: RowProps, ref?: Ref<HTMLDivElement>) {
+function Row(props: RowProps) {
   const { align, justify, reverse, noGutters, className, ...rest } = props;
 
   const theme = useTheme();
@@ -45,10 +43,11 @@ function Row(props: RowProps, ref?: Ref<HTMLDivElement>) {
         styles.noGutters(noGutters),
         className,
       )}
-      ref={ref}
       {...rest}
     />
   );
 }
+
+Row.displayName = '@Grid/Row';
 
 export default Row;
